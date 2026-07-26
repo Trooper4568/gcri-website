@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GCRI | Gaming Community</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #0b1020;
+      color: white;
+    }
+
+    header {
+      background: #111936;
+      padding: 20px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+      color: #61dafb;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #61dafb;
+    }
+
+    .hero {
+      min-height: 500px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 50px 20px;
+      background: linear-gradient(135deg, #111936, #172b59);
+    }
+
+    .hero h1 {
+      font-size: 60px;
+      margin-bottom: 15px;
+    }
+
+    .hero span {
+      color: #61dafb;
+    }
+
+    .hero p {
+      font-size: 20px;
+      color: #cbd5e1;
+      max-width: 650px;
+      margin: auto;
+      line-height: 1.6;
+    }
+
+    .buttons {
+      margin-top: 30px;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 14px 25px;
+      margin: 8px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      background: #61dafb;
+      color: #08111f;
+      transition: 0.3s;
+    }
+
+    .button:hover {
+      transform: scale(1.05);
+      background: white;
+    }
+
+    .section {
+      padding: 70px 8%;
+      text-align: center;
+    }
+
+    .section h2 {
+      font-size: 36px;
+      margin-bottom: 15px;
+      color: #61dafb;
+    }
+
+    .section p {
+      color: #cbd5e1;
+      max-width: 800px;
+      margin: auto;
+      line-height: 1.7;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      margin-top: 35px;
+    }
+
+    .card {
+      background: #151e3d;
+      padding: 25px;
+      border-radius: 12px;
+      border: 1px solid #273765;
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      border-color: #61dafb;
+    }
+
+    .card h3 {
+      margin-bottom: 10px;
+      color: white;
+    }
+
+    .rules {
+      text-align: left;
+      max-width: 750px;
+      margin: 30px auto;
+      background: #151e3d;
+      padding: 25px;
+      border-radius: 12px;
+    }
+
+    .rules li {
+      margin: 14px 0;
+      color: #dbeafe;
+    }
+
+    .notice {
+      max-width: 850px;
+      margin: 30px auto;
+      padding: 20px;
+      border-radius: 10px;
+      background: #202b4f;
+      border-left: 5px solid #61dafb;
+      color: #dbeafe;
+      line-height: 1.6;
+    }
+
+    footer {
+      background: #070b17;
+      padding: 30px;
+      text-align: center;
+      color: #94a3b8;
+    }
+
+    @media (max-width: 700px) {
+      header {
+        flex-direction: column;
+        gap: 15px;
+      }
+
+      nav a {
+        margin: 5px;
+        font-size: 14px;
+      }
+
+      .hero h1 {
+        font-size: 42px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="logo">🎮 GCRI</div>
+
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#games">Games</a>
+      <a href="#rules">Rules</a>
+      <a href="#join">Join</a>
+    </nav>
+  </header>
+
+  <section class="hero" id="home">
+    <div>
+      <h1>Welcome to <span>GCRI</span></h1>
+
+      <p>
+        Gaming Community of Rhodes Intermediate.
+        A student-created online community for gamers to connect,
+        play games, and have fun.
+      </p>
+
+      <div class="buttons">
+        <a class="button" href="YOUR_STOAT_LINK_HERE" target="_blank">
+          🎮 Join GCRI
+        </a>
+
+        <a class="button" href="#rules">
+          📜 View Rules
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="about">
+    <h2>About GCRI</h2>
+
+    <p>
+      GCRI is a student-created online gaming community for students
+      interested in gaming, gaming discussions, and connecting with others
+      who enjoy games.
+    </p>
+
+    <div class="notice">
+      <strong>Disclaimer:</strong><br>
+      GCRI is not officially sponsored, endorsed, operated, or approved
+      by Rhodes Intermediate or Forney ISD. GCRI is an independent,
+      student-created online community.
+    </div>
+  </section>
+
+  <section class="section" id="games">
+    <h2>🎮 Games</h2>
+
+    <div class="cards">
+
+      <div class="card">
+        <h3>🧱 Minecraft</h3>
+        <p>Build, explore, survive, and play with friends.</p>
+      </div>
+
+      <div class="card">
+        <h3>🎯 Fortnite</h3>
+        <p>Play matches, complete challenges, and have fun.</p>
+      </div>
+
+      <div class="card">
+        <h3>🎮 Roblox</h3>
+        <p>Discover new games and play with the community.</p>
+      </div>
+
+      <div class="card">
+        <h3>🕹️ Other Games</h3>
+        <p>Suggest games that you want the community to play.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="section" id="rules">
+    <h2>📜 Community Rules</h2>
+
+    <div class="rules">
+      <ul>
+        <li>Be respectful to everyone.</li>
+        <li>No bullying, harassment, or targeted attacks.</li>
+        <li>Keep content appropriate for the community.</li>
+        <li>Do not share personal information.</li>
+        <li>No scams, harmful links, or illegal activities.</li>
+        <li>Do not pretend to be school staff.</li>
+        <li>Follow the rules of the platform used by GCRI.</li>
+        <li>Moderators may remove content or members who break the rules.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section" id="join">
+    <h2>🚀 Join GCRI</h2>
+
+    <p>
+      Want to join the community? Click the button below to visit our
+      online community.
+    </p>
+
+    <div class="buttons">
+      <a class="button" href="https://stt.gg/ZtPd23vd" target="_blank">
+        🎮 Join on Stoat
+      </a>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 GCRI — Gaming Community of Rhodes Intermediate</p>
+    <p>Student-created online community. Not officially affiliated with Rhodes Intermediate or Forney ISD.</p>
+  </footer>
+
+</body>
+</html>
